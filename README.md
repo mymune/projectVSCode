@@ -1,1 +1,1 @@
-https://mymune.github.io/projectVSCode/
+https://mymune.github.io/projectVSCode/index.html
