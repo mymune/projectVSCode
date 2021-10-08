@@ -231,7 +231,7 @@
             transition: background 0.8s;
             touch-action: none;
             -webkit-touch-callout: none;
-            user-drag: none;
+            -webkit-user-drag: none;
             user-select: none;
         }
 
