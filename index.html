@@ -2,10 +2,10 @@
 <html lang="ru">
 
 <head>
-    <title>release</title>
+    <title>release Git</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <!-- https://realfavicongenerator.net -->
     <!--
     <meta http-equiv="cache-control" content="no-cache">
@@ -34,11 +34,18 @@
             <div class="pulse-loader"></div>
         </div>
 
+        <div class="strategybar">
+            
+            <p class="BTC"><a href="javascript:void(0);" onclick=buttonOpenLink("https://www.binance.com/ru/trade/BTC_USDT?layout=basic")> BTC</a> min_LONG: 0.45, min_SHORT: -0.37 / -0.50, vol.: 240k </p>
+            <p class="ETH"><a href="javascript:void(0);" onclick=buttonOpenLink("https://www.binance.com/ru/trade/ETH_USDT?layout=basic")> ETH</a> min_LONG: 0.46, min_SHORT: -0.40 / -0.80, vol.: 3.7k</p>
+            <p class="SOL"><a href="javascript:void(0);" onclick=buttonOpenLink("https://www.binance.com/ru/trade/SOL_USDT?layout=basic")> SOL</a> min_LONG: 0.80, min_SHORT: -0.60 / -0.90, vol.: 30k</p>
+            <p class="LINK"><a href="javascript:void(0);" onclick=buttonOpenLink("https://www.binance.com/ru/trade/LINK_USDT?layout=basic")> LINK</a> min_LONG: 0.60, min_SHORT: -0.50 / -0.80, vol.: 35k</p>
+        </div>
         <div class="adminbar">
             <button onclick="buttonClearStorage()">Clear</button>
-            <button class="btn-binance" onclick=buttonOpenLink("https://www.binance.com/ru/trade/BTC_USDT?layout=basic")> BTC</button>
-            <button class="btn-binance" onclick=buttonOpenLink("https://www.binance.com/ru/trade/SOL_USDT?layout=basic")> SOL</button>
-            <button class="btn-binance" onclick=buttonOpenLink("https://docs.google.com/spreadsheets/d/1bO0vmOoD1HQ4K-7t0BAbIBaGDpEtENtvyMiCJsVi7iM/edit?usp=sharing")> Excel</button>
+            <button class="btn-binance"
+                onclick=buttonOpenLink("https://docs.google.com/spreadsheets/d/1bO0vmOoD1HQ4K-7t0BAbIBaGDpEtENtvyMiCJsVi7iM/edit?usp=sharing")>
+                Excel</button>
             <div class="soundNotification">
                 <audio id="audio">
                     <source src="alarm.mp3" type="audio/mpeg">
@@ -68,7 +75,6 @@
                         <th>Change</th>
                         <th>Price</th>
                         <th>Volume</th>
-                        <th>Strategy</th>
                         <th>Signal</th>
                         <th>Time</th>
                     </tr>
@@ -93,11 +99,11 @@
             <p>ETH: [$3] 0.40% (1m) pririotet*</p>
             <p>ETH: [$3] 0.30% (1m) NEW*</p>
             <p>SOL: [$0.50] 1.60% (15m) risk*</p>
-            <p>SOL: [$0.30] 0.74% - 0.90% (5m) </p>
-            <p>SOL: [$0.30] 1.40% - 1.50% (5m) NEW*</p>
-            <p>SOL: [$0.15] 0.60% (1m) pririotet*</p>
-            <p>SOL: [$0.30] 1.60% (1m) NEW*</p>
-            <p>SOL: [$0.30] 0.80% (1m) NEW*</p>
+            <p>SOL: [$0.30] 0.74% - 0.90% (5m) risk</p>
+            <p>SOL: [$0.?0] 0.?0% (5m) risk</p>
+            <p>SOL: [$0.15] 0.60% (1m) </p>
+            <p>SOL: [$0.30] 1.60% (1m) </p>
+            <p>SOL: [$0.30] 0.80% (1m) pririotet </p>
             <p>BNB: [$1] 1.20% (15m) </p>
             <p>BNB: [$0.5] 0.70% (5m)</p>
             <p>XRP: [$0.0010] 0.85% (5m)</p>
@@ -106,13 +112,13 @@
             <p>DOT: [$0.05] 0.81% (5m)</p>
             <p>LINK: [$0.10] 0.55% (5m)</p>
             <p>LINK: [$0.03] 0.60% (1m)</p>
-            <p>LINK: [$0.0?] 0.90% (?m)</p>
+            <p>LINK: [$0.0?] 0.80% (5m) NEW</p>
         </div>
 
     </div>
     <script>
 
-        (function() {
+        (function () {
             const randomh = Math.round(Math.random() * 100000000);
             const elem = document.getElementsByTagName("script")[0];
             const script = document.createElement("script");
@@ -122,18 +128,18 @@
             elem.parentNode.insertBefore(script, elem);
         })();
 
-        document.getElementById("add").onclick = function() {
+        document.getElementById("add").onclick = function () {
             addTable(["BTC", "-0.16", "$48731.25000000", "0.33% (5m)", "BUY", "14:15:40 2021-08-28"])
 
         };
           /*
-        document.getElementById("remove").onclick = function() {
-            for (var j = 0; j < 5; j++) {
-                var row = document.getElementById("new_tr");
-                row.parentNode.removeChild(row);
-            }
+    document.getElementById("remove").onclick = function() {
+        for (var j = 0; j < 5; j++) {
+            var row = document.getElementById("new_tr");
+            row.parentNode.removeChild(row);
         }
-    */
+    }
+*/
     </script>
     <!--
     <script type="text/javascript" src="script.js"></script>

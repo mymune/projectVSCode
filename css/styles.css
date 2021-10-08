@@ -37,7 +37,16 @@
             border-radius: 1px;
             padding: 10px;
         }
-
+        .strategybar {
+            font-size: 10px;
+            width: 300px;
+            margin: 10px 0 0 0;
+            background: #FFFFFF;
+            border: 1px solid #ddd;
+            border-radius: 1px;
+            padding: 10px;
+            float: right;
+        }
         .inputTime {
             color: #BBC1E1;
             border: none;
@@ -222,7 +231,7 @@
             transition: background 0.8s;
             touch-action: none;
             -webkit-touch-callout: none;
-            user-drag: none;
+            -webkit-user-drag: none;
             user-select: none;
         }
 
